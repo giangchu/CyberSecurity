@@ -1,0 +1,4 @@
+Jarvis is a medium difficulty Linux box running a web server, which has DoS and brute force protection enabled. A page is found to be vulnerable to SQL injection, which requires manual exploitation. This service allows the writing of a shell to the web root for the foothold. The www user is allowed to execute a script as another user, and the script is vulnerable to command injection. On further enumeration, systemctl is found to have the SUID bit set, which is leveraged to gain a root shell.
+
+
+sqlmap -u "http://10.129.229.137/room.php?cod=1" --dbms=mysql -p cod --technique=T --time-sec=10 --level=5 --risk=3 --random-agent --delay=1 --safe-url=http://10.129.229.137/ --safe-freq=10 --sql-query="SELECT @@global.document_root"
