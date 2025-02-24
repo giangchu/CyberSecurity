@@ -97,7 +97,7 @@ conn.ConnectionString = "Driver={SQL Server};Server=QUERIER;Trusted_Connection=n
 ### MSSQL
 
 Lấy thông tin đã thu được từ bước recon để thử đăng nhập vào server MSSQL, ta sử dụng mssqlclient.py và sử dụng option windows-auth để xác định loại đăng nhập. Kết quả thu được đăng nhập thành công.
-![mssqlclient](image/mssqlclient.png)
+![mssqlclient](image/mssqlClient.png)
 
 ### Liệt kê
 
@@ -124,7 +124,7 @@ Chuyển hướng sang tìm cách leo quyền để đặt shell vào server m�
 ### Leo thang đặc quyền trong MSSQL
 
 Sử dụng công cụ Responder để tạo ra 1 server đang chia sẻ dịch vụ smb giả mạo, với mục tiêu để phishing credential của nạn nhân bị điều hướng tới smb giả mạo này.
-![Responder](image/Responder.png)
+![responder](image/responder.png)
 
 Tiếp theo, ta sẽ sử dụng xp_dirtree trong mssql server để kết nối tới UNC path của smb giả mạo. 
 ![xp_dirtree](image/impacket.png)
