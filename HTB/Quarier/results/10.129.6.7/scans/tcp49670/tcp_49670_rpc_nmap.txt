@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 22:05:06 2024 as: nmap -vv --reason -Pn -T4 -sV -p 49670 --script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /mnt/c/Users/ADMIN/Documents/CyberSecurity/HTB/Quarier/results/10.129.6.7/scans/tcp49670/tcp_49670_rpc_nmap.txt -oX /mnt/c/Users/ADMIN/Documents/CyberSecurity/HTB/Quarier/results/10.129.6.7/scans/tcp49670/xml/tcp_49670_rpc_nmap.xml 10.129.6.7
+Nmap scan report for quarier.htb (10.129.6.7)
+Host is up, received user-set (0.050s latency).
+Scanned at 2024-09-30 22:05:06 +07 for 73s
+
+PORT      STATE SERVICE REASON          VERSION
+49670/tcp open  msrpc   syn-ack ttl 127 Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 30 22:06:19 2024 -- 1 IP address (1 host up) scanned in 73.21 seconds
