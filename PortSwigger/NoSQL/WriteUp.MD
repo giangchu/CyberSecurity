@@ -7,7 +7,8 @@
 4. [Exploitation](#exploitation)
 
 ## Overview
-Trong bài viết này, chúng ta sẽ khám phá quá trình khai thác lỗ hổng injection của NoSQL để trích xuất các trường không xác định từ cơ sở dữ liệu. Các cơ sở dữ liệu NoSQL, chẳng hạn như MongoDB, ngày càng phổ biến nhờ tính linh hoạt và khả năng mở rộng của chúng. Tuy nhiên, chúng cũng dễ bị tấn công injection nếu không được bảo mật đúng cách. Tài liệu này sẽ cung cấp hướng dẫn chi tiết về việc xác định và khai thác các lỗ hổng như vậy, nhấn mạnh tầm quan trọng của các thực hành mã hóa an toàn và kiểm tra kỹ lưỡng.  
+Trong bài viết này, chúng ta sẽ khám phá quá trình khai thác lỗ hổng injection của NoSQL để trích xuất các trường không xác định từ cơ sở dữ liệu. 
+Các cơ sở dữ liệu NoSQL, chẳng hạn như MongoDB, ngày càng phổ biến nhờ tính linh hoạt và khả năng mở rộng của chúng. Tuy nhiên, chúng cũng dễ bị tấn công injection nếu không được bảo mật đúng cách.  
 Bài lab này cung cấp một ví dụ cụ thể về cách khai thác NoSQL operator injection để trích xuất các trường ẩn từ cơ sở dữ liệu. Để hoàn thành bài lab thì cần phải login thành công với user Carlos.
 
 ## Background
