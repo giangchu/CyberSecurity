@@ -154,10 +154,3 @@ nmap -sC -sV -p- <target_ip>
     ```
     
 - Kết quả: Lấy được quyền root thành công.
-
-## Bài học rút ra
-
-1. **Enumeration kỹ lưỡng**: Quét toàn bộ port và kiểm tra từng dịch vụ là bước quan trọng để tìm điểm xâm nhập.
-2. **Kiểm tra quyền truy cập**: Việc upload file vào thư mục `.ssh` cho thấy tầm quan trọng của việc kiểm tra quyền ghi trên các thư mục nhạy cảm.
-3. **Hiểu cơ chế `$PATH`**: Lỗ hổng trong `$PATH` của cronjob có thể bị khai thác để thực thi lệnh giả mạo.
-4. **Kiên trì thử nghiệm**: Thử bypass hạn chế upload bằng cách đổi đuôi file là cách tiếp cận sáng tạo và hiệu quả.
